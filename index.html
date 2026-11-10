@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Colony name] · Cat adoptions</title>
+  <meta name="description" content="Cats from a registered street colony in Valencia, looking for a home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top">
+    <span class="logo-mark" aria-hidden="true">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 26V12l4-6 3 5h4l3-5 4 6v14z"/><path d="M12 17.5v.5M20 17.5v.5"/><path d="M14.5 21.5q1.5 1.2 3 0"/><path d="M3 19h5M3 22.5l5-1M29 19h-5M29 22.5l-5-1"/></svg>
+    </span>
+    <span class="logo-name">[Colony name]</span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="#cats" data-i18n="nav.cats">Meet the cats</a>
+    <a href="#adopt" data-i18n="nav.adopt">Adopting</a>
+    <a href="#volunteer" data-i18n="nav.volunteer">Volunteer</a>
+    <a href="#about" data-i18n="nav.about">About Lumi</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <span class="tag tag--mint" data-i18n="hero.tag">Registered street colony in Valencia</span>
+      <h1 data-i18n="hero.title">Little faces from our colony, looking for a forever home.</h1>
+      <p class="lead" data-i18n="hero.text">Photos, videos and personality notes from the volunteers who feed them every week. Fall for one? Lumi can answer your questions.</p>
+      <div class="actions">
+        <a class="btn btn--accent" href="#cats" data-i18n="hero.cta">Meet the cats</a>
+        <a class="link-strong" href="#adopt" data-i18n="hero.secondary">How adopting works</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="blob"></div>
+      <figure class="polaroid polaroid--one" data-hero-slot="0">
+        <div class="polaroid-photo"></div>
+        <figcaption></figcaption>
+      </figure>
+      <figure class="polaroid polaroid--two" data-hero-slot="1">
+        <div class="polaroid-photo polaroid-photo--mint"></div>
+        <figcaption></figcaption>
+      </figure>
+      <svg class="paw paw--big" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="9" ry="7.5"/><ellipse cx="9" cy="16" rx="3.6" ry="4.6"/><ellipse cx="16" cy="9" rx="3.6" ry="4.6"/><ellipse cx="24" cy="9" rx="3.6" ry="4.6"/><ellipse cx="31" cy="16" rx="3.6" ry="4.6"/></svg>
+      <svg class="paw paw--small" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="9" ry="7.5"/><ellipse cx="9" cy="16" rx="3.6" ry="4.6"/><ellipse cx="16" cy="9" rx="3.6" ry="4.6"/><ellipse cx="24" cy="9" rx="3.6" ry="4.6"/><ellipse cx="31" cy="16" rx="3.6" ry="4.6"/></svg>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q 120 0 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 V60 H0 Z" fill="#FFFFFF"/></svg>
+  <section id="cats" class="band band--white">
+    <div class="wrap section">
+      <div class="section-head section-head--split">
+        <h2 data-i18n="cats.title">Meet the cats</h2>
+        <div id="filters" class="filters" role="group" aria-label="Filter by status"></div>
+      </div>
+      <p id="cats-message" class="muted" role="status" data-i18n="cats.loading">Loading the cats…</p>
+      <div id="cat-grid" class="cat-grid"></div>
+    </div>
+  </section>
+  <svg class="wave wave--on-white" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q 120 0 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 V60 H0 Z" fill="#FFF5EE"/></svg>
+
+  <section id="adopt" class="wrap section">
+    <div class="section-head">
+      <h2 data-i18n="adopt.title">How adopting works</h2>
+      <p class="lead" data-i18n="adopt.text">Adoptions are arranged with Lumi and the registered colony. This page is just where you start.</p>
+    </div>
+    <ol class="steps">
+      <li class="tile"><span class="dot dot--peach">1</span><strong data-i18n="adopt.s1.title">Browse the cats</strong><span data-i18n="adopt.s1.text">Photos, videos and personality notes from volunteers.</span></li>
+      <li class="tile"><span class="dot dot--mint">2</span><strong data-i18n="adopt.s2.title">Email Lumi</strong><span data-i18n="adopt.s2.text">Say which cat, and ask for medical records and history.</span></li>
+      <li class="tile"><span class="dot dot--butter">3</span><strong data-i18n="adopt.s3.title">Meet the cat</strong><span data-i18n="adopt.s3.text">Arranged directly with Lumi.</span></li>
+      <li class="tile"><span class="dot dot--lavender">4</span><strong data-i18n="adopt.s4.title">Adoption agreement</strong><span data-i18n="adopt.s4.text">Signed with the colony, on its terms.</span></li>
+    </ol>
+    <div class="requirements">
+      <h3 data-i18n="adopt.req.title">General requirements</h3>
+      <ul>
+        <li data-i18n="adopt.req.1">[Requirement confirmed by Lumi / the colony — e.g. signed adoption contract]</li>
+        <li data-i18n="adopt.req.2">[Requirement — e.g. home visit or follow-up]</li>
+        <li data-i18n="adopt.req.3">[Requirement — e.g. microchip registered to the adopter]</li>
+      </ul>
+      <p class="small muted" data-i18n="adopt.req.note">Final terms are set by the registered colony and may change. Lumi confirms them for each adoption.</p>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q 120 0 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 V60 H0 Z" fill="#FFFFFF"/></svg>
+  <section id="volunteer" class="band band--white">
+    <div class="wrap section">
+      <div class="section-head">
+        <h2 data-i18n="vol.title">Lend a paw</h2>
+        <p class="lead" data-i18n="vol.text">The colony runs on volunteers. Can't adopt right now? There are other ways to help.</p>
+      </div>
+      <div class="help-grid">
+        <div class="tile tile--peach">
+          <span class="icon-circle" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18l-2 6a2 2 0 0 1-2 1.5H7A2 2 0 0 1 5 18z"/><path d="M9 9c0-1.5 1.5-2 1.5-3.5M13.5 9c0-1.5 1.5-2 1.5-3.5"/></svg></span>
+          <strong data-i18n="vol.feed.title">Feeding shifts</strong>
+          <span data-i18n="vol.feed.text">Join the weekly rota to feed the cats and clean bowls.</span>
+        </div>
+        <div class="tile tile--mint">
+          <span class="icon-circle" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>
+          <strong data-i18n="vol.foster.title">Fostering</strong>
+          <span data-i18n="vol.foster.text">[Confirm with Lumi whether the colony uses foster homes.]</span>
+        </div>
+        <div class="tile tile--butter">
+          <span class="icon-circle" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+          <strong data-i18n="vol.supplies.title">Supplies</strong>
+          <span data-i18n="vol.supplies.text">[What the colony needs most — e.g. dry food, wet food, bowls.]</span>
+        </div>
+        <div class="tile tile--lavender">
+          <span class="icon-circle" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg></span>
+          <strong data-i18n="vol.share.title">Share the cats</strong>
+          <span data-i18n="vol.share.text">Repost them on Instagram. More eyes, more adoptions.</span>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn btn--accent" data-email-link="volunteer" href="#contact" data-i18n="vol.cta">Ask Lumi about volunteering</a>
+        <span class="small muted" data-i18n="vol.note">Volunteer shifts and rules are coordinated by Lumi.</span>
+      </div>
+    </div>
+  </section>
+  <svg class="wave wave--on-white" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q 120 0 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30 V60 H0 Z" fill="#FFF5EE"/></svg>
+
+  <section id="about" class="wrap section about">
+    <div class="about-photo">
+      <!-- Optional: replace with <img src="images/lumi.jpg" alt="Lumi"> -->
+      <span class="photo-label" data-i18n="about.photo">Photo of Lumi (optional)</span>
+    </div>
+    <div class="about-text">
+      <h2 data-i18n="about.title">Hola, I'm Lumi!</h2>
+      <p class="lead" data-i18n="about.text">[Lumi's intro in her own words: how the colony started, how many cats, what the volunteers do. Written with her and approved by her before going live.]</p>
+      <a class="btn btn--accent" data-email-link="general" href="#contact" data-i18n="about.cta">Say hi to Lumi</a>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap contact-wrap">
+    <div class="contact">
+      <div>
+        <h2 data-i18n="contact.title">Questions about a cat?</h2>
+        <p><span data-i18n="contact.text">For medical records or anything about a specific cat, contact Lumi at</span> <a class="on-dark" data-email-link="general" data-email-text href="#contact">[email]</a>.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn--light" data-email-link="general" href="#contact" data-i18n="contact.email">Email Lumi</a>
+        <a class="btn btn--outline-light" data-instagram href="#contact">@instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>This page is an informational listing maintained by volunteers of the [name] cat colony, registered in [municipality]. Ages are observational estimates, not veterinary information. Volunteers do not process adoptions or guarantee any animal's health, history, or behavior. Medical records, adoption terms, and any agreements are handled solely by [entity/person responsible]. For inquiries, contact Lumi at <span data-email-text>[email]</span>.</p>
+  <p lang="es">Esta página es un listado informativo mantenido por voluntarias de la colonia felina [nombre], registrada en [municipio]. Las edades son estimaciones basadas en la observación y no constituyen información veterinaria. Las voluntarias no gestionan adopciones ni garantizan el estado de salud, historial o comportamiento de ningún animal. Los historiales médicos, las condiciones de adopción y cualquier contrato corresponden exclusivamente a [entidad/responsable]. Para consultas, contacta con Lumi en <span data-email-text>[email]</span>.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
