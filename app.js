@@ -141,7 +141,7 @@ function initialLang() {
     const saved = localStorage.getItem('lang');
     if (saved === 'en' || saved === 'es') return saved;
   } catch (e) { /* storage unavailable */ }
-  return (navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en';
+  return 'es'; // Spanish first; visitors can switch to English
 }
 
 function t(key, vars = {}) {
