@@ -4,7 +4,7 @@
 const CONFIG = {
   // Paste the CSV link from Google Sheets (File → Share → Publish to web → "Cats" tab → CSV).
   // Leave empty to show the sample cats below while you test.
-  sheetCsvUrl: '',
+  sheetCsvUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQcLe6HK7r3zRDjvGKiD1wrjw6UxFikZVJjU0kVFy7L1RZDRZF9EpfycrfjYuWNKA/pub?gid=521153691&single=true&output=csv',
   lumiEmail: 'lumi@example.com',
   instagramHandle: 'your_colony_handle'
 };
